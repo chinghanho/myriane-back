@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.counter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours,
+.mins,
+.sec {
+  font-family: 'Source Code Pro', monospace;
+  display: inline-block;
+  font-size: 12vw;
+}
+
+.hours::after,
+.mins::after {
+  content: ':';
+}
+
+@media (max-width: 456px) {
+  .hours,
+  .mins,
+  .sec {
+    font-size: 17vw;
+  }
+}
